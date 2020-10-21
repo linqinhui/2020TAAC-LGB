@@ -42,3 +42,5 @@
 3.	Self-attention 
 4.	池化层，使用max-pooling来减少模型参数。
 5.	全连接层-作用就是分类。softmax
+
+![image](https://github.com/linqinhui/2020TAAC-LGB/blob/master/微信图片_20201021211523.png) 
