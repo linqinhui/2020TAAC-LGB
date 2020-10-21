@@ -25,11 +25,15 @@
 
 ![image](https://github.com/linqinhui/2020TAAC-LGB/blob/master/微信图片_20201021213543.png)
 
-由于每个广告有不同的属性: 素材 id、广告 id、产品 id、产品类目 id、广告主id、广告主行业 id 等，并且每个用户点击的广告也有不同。这样每个用户可以得到八种文本输入。
+由于每个广告有不同的属性: creative_id、ad_id、product_id、category_id、advertiser_id、 indusury_id .product_category等，并且每个用户点击的广告也有不同。这样每个用户可以得到六种文本输入。
 但是TF-idf会有一个缺点，就是由于用户点击的广告类型过多，编码后会出现维度爆炸。
        
 
 阶段三：针对阶段二中的TF-IDF编码出现维度爆炸现象，我们选择NLP领域的另外一种方法word2vec。做法还是和TF-idf的一样。
+
+w2v = Word2Vec(input_docs, size=embed_size, sg=1, window=20, seed=2020, workers=64, min_count=1, iter=10)
+其中input_docs是输入的是各个用户按照时间排序的点击序列。
+size=输出的向量维度
 
 #二、深度学习方案：
 基于LSTM的多分类文本输入模型网络结构，使用的是pytorch深度学习框架。
