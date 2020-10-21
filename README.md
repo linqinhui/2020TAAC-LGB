@@ -23,7 +23,7 @@
 
 用户一：（[creative_id_1, creative_id_2, creative_id_3,……..]）,（[ad_id_1, ad_id_2, ad_id_3,……..]），（[advertiser_id_1, advertiser_id_2, advertiser_id_3,……..]），………..。
 
-![image]https://github.com/linqinhui/2020TAAC-LGB/commit/2a3bad6b076e679a183e4de0d5a0a1074ee9632f
+![image](https://github.com/linqinhui/2020TAAC-LGB/blob/master/微信图片_20201021213543.png)
 
 由于每个广告有不同的属性: 素材 id、广告 id、产品 id、产品类目 id、广告主id、广告主行业 id 等，并且每个用户点击的广告也有不同。这样每个用户可以得到八种文本输入。
 但是TF-idf会有一个缺点，就是由于用户点击的广告类型过多，编码后会出现维度爆炸。
