@@ -26,5 +26,5 @@
 由于每个广告有不同的属性: 素材 id、广告 id、产品 id、产品类目 id、广告主id、广告主行业 id 等，并且每个用户点击的广告也有不同。这样每个用户可以得到八种文本输入。
 但是TF-idf会有一个缺点，就是由于用户点击的广告类型过多，编码后会出现维度爆炸。
        
-![image](https://img-blog.csdnimg.cn/20201021195751798.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0MDc0OTYx,size_16,color_FFFFFF,t_70#pic_center)
+![image](https://img-blog.csdnimg.cn/20201021195751798.jpg)
 阶段三：针对阶段二中的TF-IDF编码出现维度爆炸现象，我们选择NLP领域的另外一种方法word2vec。做法还是和TF-idf的一样。
