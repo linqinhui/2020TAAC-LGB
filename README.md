@@ -39,8 +39,8 @@ size=输出的向量维度
 #二、深度学习方案：
 基于LSTM的多分类文本输入模型网络结构，使用的是pytorch深度学习框架。
 整个模型由五部分构成：输入层-LSTM层-self-attention层-池化层-全连接层。
-1.	输入层：我选了“creative_id”,”ad_id”,”advertiser_id”作为模型的输入，使用fasttext作为预训练模型。即预先训练各个id的fasttextmox ,将预训练后的模型嵌入embedding层。
-2.	LSTM ：我们是单独将各个id都 embedding后，接入lstm+attention+池化层+全连接层，最后在多分类层进行拼接。（另外一种做法就是各个idembedding好后，先全部进行底层拼接，然后在接入lstm+attention+池化+softmax）
+1.	输入层：我选了“creative_id”,”ad_id”,”advertiser_id”作为模型的输入，使用fasttext作为预训练模型。即预先训练各个id的fasttext模型 ,将预训练后的模型嵌入embedding层。
+2.	LSTM ：我们是单独将各个id，embedding后，接入lstm+attention+池化层+全连接层，最后在多分类层进行拼接。
 3.	Self-attention 
 4.	池化层，使用max-pooling来减少模型参数。
 5.	全连接层-作用就是分类。softmax
